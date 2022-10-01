@@ -7,8 +7,8 @@ public class Wander : MonoBehaviour
     [SerializeField] float speed = 1f;
     [SerializeField] Rigidbody2D rb;
 
-    static float ROOM_HALFWIDTH = 16;
-    static float ROOM_HALFHEIGHT = 10;
+    static float ROOM_HALFWIDTH = 12.8f;
+    static float ROOM_HALFHEIGHT = 8f;
 
     public enum State { Idle, Move }
 
