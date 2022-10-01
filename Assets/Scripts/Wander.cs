@@ -7,7 +7,6 @@ public class Wander : MonoBehaviour
     [SerializeField] float speed = 1f;
     [SerializeField] Rigidbody2D rb;
 
-
     public enum State { Idle, Move }
 
     public class Driver
@@ -25,6 +24,14 @@ public class Wander : MonoBehaviour
     {
         fsm = new StateMachine<State, Driver>(this);
         fsm.ChangeState(State.Idle);
+        Party.onLightsOff += ReactToLightsOff;
+        Party.onLightsOn += ReactToLightsOn;
+    }
+
+    void OnDestroy()
+    {
+        Party.onLightsOff -= ReactToLightsOff;
+        Party.onLightsOn -= ReactToLightsOn;
     }
 
     void OnEnable()
@@ -83,6 +90,16 @@ public class Wander : MonoBehaviour
     void GetRandomDestination()
     {
         destination = Party.GetRandomPoint();
+    }
+
+    void ReactToLightsOff()
+    {
+        enabled = false;
+    }
+
+    void ReactToLightsOn()
+    {
+        enabled = true;
     }
     
 }
