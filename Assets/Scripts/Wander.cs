@@ -7,8 +7,6 @@ public class Wander : MonoBehaviour
     [SerializeField] float speed = 1f;
     [SerializeField] Rigidbody2D rb;
 
-    static float ROOM_HALFWIDTH = 12.8f;
-    static float ROOM_HALFHEIGHT = 8f;
 
     public enum State { Idle, Move }
 
@@ -84,9 +82,7 @@ public class Wander : MonoBehaviour
 
     void GetRandomDestination()
     {
-        destination = new Vector2(
-            Random.Range(-ROOM_HALFWIDTH, ROOM_HALFWIDTH),
-            Random.Range(-ROOM_HALFHEIGHT, ROOM_HALFHEIGHT));
+        destination = Party.GetRandomPoint();
     }
     
 }
