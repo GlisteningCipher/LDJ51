@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: RightHand
+    m_Hash: 1979272496
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: 8479442126826395796, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8479442126826395796, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: 562897834432249289, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 562897834432249289, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: 7024167793574221594, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7024167793574221594, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -5083671852704341673, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5083671852704341673, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: 5289333623758051069, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5289333623758051069, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -2849053135335414934, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2849053135335414934, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: -8048553480535361608, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8048553480535361608, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: LeftHand
+    m_Hash: -1233783956
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: 4610713986007002316, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4610713986007002316, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -779701448179877522, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -779701448179877522, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: -6843393734713068707, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6843393734713068707, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -4435253078444076846, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4435253078444076846, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -2163143109824282574, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2163143109824282574, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -1537686733059553407, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1537686733059553407, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: 8352677187143283471, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8352677187143283471, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Eyes
+    m_Hash: 120101800
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: -2304091362290034975, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2304091362290034975, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: 2439837414732609993, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2439837414732609993, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: 2318638403306058329, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2318638403306058329, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -8280429424308382200, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8280429424308382200, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -71227146074545299, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -71227146074545299, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -2215384351491301445, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2215384351491301445, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: 4709989091557523908, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4709989091557523908, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Hat
+    m_Hash: -1438192983
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: 6334788118349015271, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6334788118349015271, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -2209051466842560141, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2209051466842560141, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: -4281209861950875639, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4281209861950875639, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -4476513408536878202, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4476513408536878202, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -7994537227990781862, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7994537227990781862, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: 7000347841317251954, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7000347841317251954, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: -2110110320612396733, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2110110320612396733, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Head
+    m_Hash: 130111906
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: -4098480572645675460, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4098480572645675460, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -1549726830335086203, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1549726830335086203, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: -4189686621381633465, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4189686621381633465, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: 8245526646719127379, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8245526646719127379, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -5286427132314216118, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5286427132314216118, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -2684130948353897494, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2684130948353897494, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: -2807179178766216053, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2807179178766216053, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Torso
+    m_Hash: -425815167
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: 7295377572166562536, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7295377572166562536, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -6844729833836911189, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6844729833836911189, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: 5634971638167200138, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5634971638167200138, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -257334735016016718, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -257334735016016718, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -2740698673494166898, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2740698673494166898, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -6888140346621110092, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6888140346621110092, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: -5934686072497580142, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5934686072497580142, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: RightLeg
+    m_Hash: -2042820100
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: 4783264320501891142, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4783264320501891142, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -338132548381302906, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -338132548381302906, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: 6083113261789265565, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6083113261789265565, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -4259779459508093158, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4259779459508093158, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -3978988368012314772, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3978988368012314772, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: -3085524911127063803, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3085524911127063803, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: 387359909677973946, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 387359909677973946, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: LeftLeg
+    m_Hash: 101577729
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Default
+      m_Hash: 753088835
+      m_Sprite: {fileID: -6098450134468695214, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6098450134468695214, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Monopoly
+      m_Hash: 1274903389
+      m_Sprite: {fileID: -5662997873214872429, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5662997873214872429, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: Tweed
+      m_Hash: -519031461
+      m_Sprite: {fileID: -656803432087934646, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -656803432087934646, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: GreyTweed
+      m_Hash: 1612583296
+      m_Sprite: {fileID: -9156299282573717988, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -9156299282573717988, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: WhiteDress
+      m_Hash: 1057264220
+      m_Sprite: {fileID: -3484378921321472583, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3484378921321472583, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: DarkBlueDress
+      m_Hash: 821093275
+      m_Sprite: {fileID: 767380110504608639, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 767380110504608639, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    - m_Name: LuckyCharms
+      m_Hash: -619397866
+      m_Sprite: {fileID: 8255665798155378816, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8255665798155378816, guid: 1dc998b8d9e869f459f391afdb42ae61, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  m_PrimaryLibraryGUID: 
