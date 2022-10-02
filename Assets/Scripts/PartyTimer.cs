@@ -8,12 +8,15 @@ public class PartyTimer : MonoBehaviour
 
     double dspTime => AudioSettings.dspTime;
 
-    double startTime;
-    double lightsOffEvent;
-    double lightsOnEvent;
-    double resumePartyEvent;
+    static double startTime;
+    static double lightsOffEvent;
+    static double lightsOnEvent;
+    static double resumePartyEvent;
+    static double lastLoop => startTime + 168 + 1; //added 1 beat to trigger resume on last loop
+    static double endTime => startTime + runtime;
 
-    static double loopLength = 12;
+    const double loopLength = 12;
+    const double runtime = 300;
 
     void OnEnable()
     {
@@ -28,20 +31,26 @@ public class PartyTimer : MonoBehaviour
     {
         if (dspTime >= lightsOffEvent)
         {
-            Debug.Log("Lights Off");
+            Party.onLightsOff.Invoke();
             lightsOffEvent += loopLength;
         }
         
-        if (dspTime >= lightsOnEvent)
+        if (dspTime >= lightsOnEvent && dspTime <= lastLoop)
         {
-            Debug.Log("Lights On");
+            Party.onLightsOn.Invoke();
             lightsOnEvent += loopLength;
         }
         
-        if (dspTime >= resumePartyEvent)
+        if (dspTime >= resumePartyEvent && dspTime <= lastLoop)
         {
-            Debug.Log("Resume Party");
+            Party.onResumeParty.Invoke();
             resumePartyEvent += loopLength;
+        }
+
+        if (dspTime >= endTime )
+        {
+            Debug.Log("The End!");
+            enabled = false;
         }
     }
 }
