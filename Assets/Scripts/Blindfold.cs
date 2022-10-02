@@ -7,7 +7,8 @@ public class Blindfold : MonoBehaviour
 
     void Awake()
     {
-        image.enabled = false;
+        image.enabled = true;
+        gameObject.SetActive(false);
         Party.onLightsOff += Activate;
         Party.onLightsOn += Deactivate;
     }
@@ -20,11 +21,11 @@ public class Blindfold : MonoBehaviour
 
     void Activate()
     {
-        image.enabled = true;
+        gameObject.SetActive(true);
     }
 
     void Deactivate()
     {
-        image.enabled = false;
+        gameObject.SetActive(false);
     }
 }

@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9981694efdd90f344b9d53c81f45484f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myClickable: {fileID: 2907864540654568095}
   knifeRange: {fileID: 4872931891563784931}
   filter:
     useTriggers: 1
@@ -109,3 +110,14 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &2907864540654568095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6693570116812751849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+  m_PrefabInstance: {fileID: 8412330384466952566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f22a4254063e24aa1ee4be550f9f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
