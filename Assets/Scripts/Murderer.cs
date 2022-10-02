@@ -5,6 +5,16 @@ public class Murderer : MonoBehaviour
     [SerializeField] Collider2D knifeRange;
     [SerializeField] ContactFilter2D filter;
 
+    void Awake()
+    {
+        Party.onLightsOff += Kill;
+    }
+
+    void OnDestroy()
+    {
+        Party.onLightsOff -= Kill;
+    }
+
     [ContextMenu("Kill")]
     void Kill()
     {

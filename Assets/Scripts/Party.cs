@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 using Random = UnityEngine.Random;
 
 public class Party : MonoBehaviour
@@ -11,9 +12,12 @@ public class Party : MonoBehaviour
 
     public static event Action onLightsOff;
     public static event Action onLightsOn;
+    public static event Action onResumeParty;
 
     static float ROOM_HALFWIDTH = 12.8f;
     static float ROOM_HALFHEIGHT = 8f;
+
+    bool lightsOn = true;
 
     void OnEnable()
     {
@@ -23,6 +27,15 @@ public class Party : MonoBehaviour
     void OnDisable()
     {
         EndParty();
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonUp("Fire1"))
+        {
+            lightsOn = !lightsOn;
+            if (lightsOn) TurnLightsOn(); else TurnLightsOff();
+        }
     }
 
     void StartParty()
@@ -39,7 +52,7 @@ public class Party : MonoBehaviour
             Instantiate(murdererPrefab, spawnPos, Quaternion.identity, transform);
         }
         
-        TurnLightsOn();
+        onResumeParty.Invoke();
     }
 
     void EndParty()
@@ -60,6 +73,13 @@ public class Party : MonoBehaviour
     void TurnLightsOn()
     {
         onLightsOn.Invoke();
+        StartCoroutine(ResumeParty(2f));
+    }
+
+    IEnumerator ResumeParty(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        onResumeParty.Invoke();
     }
 
     public static Vector2 GetRandomPoint()

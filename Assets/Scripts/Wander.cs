@@ -6,6 +6,7 @@ public class Wander : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] State currentState;
 
     public enum State { Idle, Move }
 
@@ -23,25 +24,26 @@ public class Wander : MonoBehaviour
     void Awake()
     {
         fsm = new StateMachine<State, Driver>(this);
-        fsm.ChangeState(State.Idle);
         Party.onLightsOff += ReactToLightsOff;
         Party.onLightsOn += ReactToLightsOn;
+        Party.onResumeParty += OnResumeParty;
+    }
+
+    void Update()
+    {
+        currentState = fsm.State;
     }
 
     void OnDestroy()
     {
         Party.onLightsOff -= ReactToLightsOff;
         Party.onLightsOn -= ReactToLightsOn;
+        Party.onResumeParty -= OnResumeParty;
     }
 
     void OnEnable()
     {
         fsm.ChangeState(State.Idle);
-    }
-
-    void OnDisable()
-    {
-        StopAllCoroutines();
     }
 
     void FixedUpdate()
@@ -52,14 +54,15 @@ public class Wander : MonoBehaviour
     IEnumerator Idle_Enter()
     {
         rb.drag = 10;
-        yield return new WaitForSeconds(2);
-        GetRandomDestination();
+        yield return new WaitForSeconds(Random.Range(0.5f,3f));
         fsm.ChangeState(State.Move);
     }
 
     void Move_Enter()
     {
         rb.drag = 2;
+        speed = Random.Range(5,10);
+        GetRandomDestination();
         idleIfStuck = StartCoroutine(IdleIfStuck());
     }
 
@@ -98,6 +101,11 @@ public class Wander : MonoBehaviour
     }
 
     void ReactToLightsOn()
+    {
+        enabled = false;
+    }
+
+    void OnResumeParty()
     {
         enabled = true;
     }

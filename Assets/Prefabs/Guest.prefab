@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27bc7f691deb46149b60168e559f3951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   rb: {fileID: 1918073830}
 --- !u!50 &1918073830
 Rigidbody2D:
@@ -810,7 +810,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.25, y: 0.75}
+  m_Size: {x: 1, y: 1}
   m_Direction: 1
 --- !u!1 &6932498856910554128
 GameObject:
