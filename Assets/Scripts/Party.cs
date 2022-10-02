@@ -17,7 +17,9 @@ public class Party : MonoBehaviour
     static float ROOM_HALFWIDTH = 12.8f;
     static float ROOM_HALFHEIGHT = 8f;
 
-    bool lightsOn = true;
+    // bool lightsOn = true;
+
+    Coroutine mainLoop;
 
     void OnEnable()
     {
@@ -31,11 +33,11 @@ public class Party : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonUp("Fire1"))
-        {
-            lightsOn = !lightsOn;
-            if (lightsOn) TurnLightsOn(); else TurnLightsOff();
-        }
+        // if (Input.GetButtonUp("Fire1"))
+        // {
+        //     lightsOn = !lightsOn;
+        //     if (lightsOn) TurnLightsOn(); else TurnLightsOff();
+        // }
     }
 
     void StartParty()
@@ -51,8 +53,9 @@ public class Party : MonoBehaviour
             var spawnPos = GetRandomPoint();
             Instantiate(murdererPrefab, spawnPos, Quaternion.identity, transform);
         }
-        
+
         onResumeParty.Invoke();
+        mainLoop = StartCoroutine(MainLoop());
     }
 
     void EndParty()
@@ -61,25 +64,48 @@ public class Party : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+        StopCoroutine(mainLoop);
     }
 
-    [ContextMenu("Lights Off")]
-    void TurnLightsOff()
+    // [ContextMenu("Lights Off")]
+    // void TurnLightsOff()
+    // {
+    //     onLightsOff.Invoke();
+    // }
+
+    // [ContextMenu("Lights On")]
+    // void TurnLightsOn()
+    // {
+    //     onLightsOn.Invoke();
+    //     StartCoroutine(ResumeParty(1f));
+    // }
+
+    IEnumerator TurnLightsOff(float delay)
     {
+        yield return new WaitForSeconds(delay);
         onLightsOff.Invoke();
     }
-
-    [ContextMenu("Lights On")]
-    void TurnLightsOn()
+    
+    IEnumerator TurnLightsOn(float delay)
     {
+        yield return new WaitForSeconds(delay);
         onLightsOn.Invoke();
-        StartCoroutine(ResumeParty(2f));
     }
 
     IEnumerator ResumeParty(float delay)
     {
         yield return new WaitForSeconds(delay);
         onResumeParty.Invoke();
+    }
+
+    IEnumerator MainLoop()
+    {
+        while (true)
+        {
+            yield return TurnLightsOff(7f);
+            yield return TurnLightsOn(0.5f);
+            yield return ResumeParty(2.5f);
+        }
     }
 
     public static Vector2 GetRandomPoint()

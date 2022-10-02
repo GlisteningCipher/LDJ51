@@ -4,9 +4,18 @@ using System.Collections;
 
 public class Wander : MonoBehaviour
 {
-    [SerializeField] float speed = 1f;
+    static float speedMin = 5f;
+    static float speedMax = 10f;
+    static float idleMin = 0.5f;
+    static float idleMax = 3f;
+    static float dragIdle = 10f;
+    static float dragMove = 2f;
+    static float dragFreeze = 5f;
+
     [SerializeField] Rigidbody2D rb;
     [SerializeField] State currentState;
+
+    float speed;
 
     public enum State { Idle, Move }
 
@@ -46,6 +55,11 @@ public class Wander : MonoBehaviour
         fsm.ChangeState(State.Idle);
     }
 
+    void OnDisable()
+    {
+        rb.drag = dragFreeze;
+    }
+
     void FixedUpdate()
     {
         fsm.Driver.FixedUpdate.Invoke();
@@ -53,15 +67,15 @@ public class Wander : MonoBehaviour
 
     IEnumerator Idle_Enter()
     {
-        rb.drag = 10;
-        yield return new WaitForSeconds(Random.Range(0.5f,3f));
+        rb.drag = dragIdle;
+        yield return new WaitForSeconds(Random.Range(idleMin, idleMax));
         fsm.ChangeState(State.Move);
     }
 
     void Move_Enter()
     {
-        rb.drag = 2;
-        speed = Random.Range(5,10);
+        rb.drag = dragMove;
+        speed = Random.Range(speedMin, speedMax);
         GetRandomDestination();
         idleIfStuck = StartCoroutine(IdleIfStuck());
     }
