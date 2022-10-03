@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b66110b14cb6840bc089427797d3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8551521097805063106}
 --- !u!58 &4505802639395028267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116,6 +117,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Victim
       objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: 0.0037543178
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: 0.20238495
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Extent.x
+      value: 0.7732853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 0.7695314
+      objectReference: {fileID: 0}
     - target: {fileID: 6700594075730647792, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
       propertyPath: m_Name
       value: Victim
@@ -137,5 +154,10 @@ PrefabInstance:
 --- !u!4 &2990209903922654042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2319344700184482431, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+  m_PrefabInstance: {fileID: 671225082269694245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8551521097805063106 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9222721704095750887, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
   m_PrefabInstance: {fileID: 671225082269694245}
   m_PrefabAsset: {fileID: 0}
