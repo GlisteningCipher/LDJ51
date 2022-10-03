@@ -1085,7 +1085,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Last night was a tragedy.
+
+
+
+
+    ...But the real tragedy is that the
+    murderer did not come for you.
+
+
+
+
+    I''ll bee keeping the money.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8bee2882bda55ad4395df1f1fd95aece, type: 2}
   m_sharedMaterial: {fileID: 4114387550735183188, guid: 8bee2882bda55ad4395df1f1fd95aece, type: 2}
@@ -1265,18 +1276,12 @@ MonoBehaviour:
     for now.\r"
   - "To the \"Detective\"\r\n\r\nThis was not a job well done.\r\n\r\nBut a job is
     a job, so here is your payment. \r\n\r\nDo not write back."
-  - '
-
-    Last night was a tragedy.
+  - 'Last night was a tragedy.
 
 
 
-
-
-    ...But the real tragedy is that the
-    murderer did not come for you.
-
-
+    ...But the real tragedy is that the murderer
+    did not come for you.
 
 
 
