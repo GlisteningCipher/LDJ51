@@ -5,6 +5,7 @@ public class Murderer : MonoBehaviour
     [SerializeField] Collider2D knifeRange;
     [SerializeField] ContactFilter2D filter;
 
+
     void Awake()
     {
         Party.onLightsOff += Kill;
@@ -38,8 +39,10 @@ public class Murderer : MonoBehaviour
 
     void ShootRandomTarget()
     {
+
         var victim = GetRandomVictim();
         victim.GetShot();
+
     }
 
     Victim GetRandomVictim()

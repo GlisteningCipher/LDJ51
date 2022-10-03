@@ -4,6 +4,7 @@ using UnityEngine;
 public class Victim : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] AudioSource gunShot;
     public void GetStabbed()
     {
         Die();
@@ -11,7 +12,10 @@ public class Victim : MonoBehaviour
 
     public void GetShot()
     {
+        gunShot.Play();
+        Debug.Log("Pew");
         Die();
+
     }
 
     void Die()

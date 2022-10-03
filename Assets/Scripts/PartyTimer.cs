@@ -5,7 +5,9 @@ using UnityEngine;
 public class PartyTimer : MonoBehaviour
 {
     [SerializeField] AudioSource musicPlayer;
+    [SerializeField] AudioSource chatterPlayer;
 
+    float chatterVolume;
     double dspTime => AudioSettings.dspTime;
 
     static double startTime;
@@ -25,6 +27,8 @@ public class PartyTimer : MonoBehaviour
         lightsOnEvent = startTime + 11;
         resumePartyEvent = startTime;
         musicPlayer.PlayScheduled(startTime);
+        chatterPlayer.PlayScheduled(startTime);
+        chatterVolume = chatterPlayer.volume;
     }
 
     void Update()
@@ -33,6 +37,7 @@ public class PartyTimer : MonoBehaviour
         {
             Party.onLightsOff.Invoke();
             lightsOffEvent += loopLength;
+            chatterPlayer.volume = 0;
         }
         
         if (dspTime >= lightsOnEvent && dspTime <= lastLoop)
@@ -45,6 +50,7 @@ public class PartyTimer : MonoBehaviour
         {
             Party.onResumeParty.Invoke();
             resumePartyEvent += loopLength;
+            chatterPlayer.volume = chatterVolume;
         }
 
         if (dspTime >= endTime )

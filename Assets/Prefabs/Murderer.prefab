@@ -55,6 +55,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Murderer
       objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: 0.0037543178
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: 0.20238495
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Extent.x
+      value: 0.7732853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278641628366990849, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 0.7695314
+      objectReference: {fileID: 0}
     - target: {fileID: 6700594075730647792, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
       propertyPath: m_Name
       value: Murderer
