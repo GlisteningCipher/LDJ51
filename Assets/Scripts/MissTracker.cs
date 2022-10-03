@@ -21,7 +21,7 @@ public class MissTracker : MonoBehaviour
         transform.GetChild(misses).gameObject.SetActive(true);
         misses += 1;
 
-        if (misses == maxMisses) { Party.onLightsOn += HandleGameOver; }
+        if (misses == maxMisses) { HandleGameOver(); }
         else Party.onLightsOn += HandleWrongGuess;
     }
 
@@ -35,7 +35,6 @@ public class MissTracker : MonoBehaviour
     {
         Party.deaths = 15;
         Party.onGameOver.Invoke();
-        Party.onLightsOn -= HandleGameOver;
     }
 
     void HandleGameStart()
