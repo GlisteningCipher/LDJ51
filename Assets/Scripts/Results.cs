@@ -66,10 +66,12 @@ public class Results : MonoBehaviour
         
 
         ((RectTransform)transform).DOAnchorPosY(0, 0.5f);
+        
     }
 
     void OnDisable()
     {
+       
         ((RectTransform)transform).DOAnchorPosY(-500, 0.5f);
         Party.deaths = 0;
     }

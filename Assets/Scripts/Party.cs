@@ -35,6 +35,7 @@ public class Party : MonoBehaviour
 
     void StartParty()
     {
+        Party.onLightsOn.Invoke();
         for (int i = 0; i < startingVictims; i++)
         {
             var spawnPos = GetRandomPoint();

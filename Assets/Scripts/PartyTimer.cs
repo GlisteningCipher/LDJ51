@@ -61,7 +61,7 @@ public class PartyTimer : MonoBehaviour
             chatterPlayer.volume = chatterVolume;
         }
 
-        if (dspTime >= endTime )
+        if (dspTime >= lastLoop + loopLength )
         {
             Party.onGameOver.Invoke();
             enabled = false;
