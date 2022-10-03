@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8551521097805063106}
   gunShot: {fileID: 2106518360101647163}
+  clickArea: {fileID: 4305937081275717036}
 --- !u!58 &4505802639395028267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,6 +156,11 @@ PrefabInstance:
 --- !u!4 &2990209903922654042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2319344700184482431, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
+  m_PrefabInstance: {fileID: 671225082269694245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4305937081275717036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3643809373817105545, guid: c033bf97d19e5164a9258cf31b35d8e9, type: 3}
   m_PrefabInstance: {fileID: 671225082269694245}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6173838502951085013 stripped

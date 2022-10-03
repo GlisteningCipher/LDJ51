@@ -5,6 +5,8 @@ public class Victim : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] AudioSource gunShot;
+    [SerializeField] GameObject clickArea;
+
     public void GetStabbed()
     {
         Die();
@@ -23,7 +25,8 @@ public class Victim : MonoBehaviour
         GetComponentInParent<Rigidbody2D>().mass = 9999;
         Destroy(GetComponentInParent<Wander>());
         Destroy(gameObject);
-
+        Destroy(clickArea);
+        Party.deaths += 1;
     }
 
 }

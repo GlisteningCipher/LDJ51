@@ -1,13 +1,12 @@
 using UnityEngine;
 using System;
-using System.Collections;
 using Random = UnityEngine.Random;
 
 public class Party : MonoBehaviour
 {
     [SerializeField] GameObject victimPrefab;
-    [SerializeField] int startingVictims = 49;
     [SerializeField] GameObject murdererPrefab;
+    [SerializeField] int startingVictims = 49;
     [SerializeField] int startingMurderers = 1;
 
     public static Action onLightsOff;
@@ -15,6 +14,9 @@ public class Party : MonoBehaviour
     public static Action onResumeParty;
 
     public static Action onGameOver;
+    public static Action onGameStart;
+
+    public static int deaths;
 
     static float ROOM_HALFWIDTH = 12.8f;
     static float ROOM_HALFHEIGHT = 8f;
@@ -47,6 +49,9 @@ public class Party : MonoBehaviour
 
         var behaviours = GetComponentsInChildren<Behaviour>();
         foreach(var behaviour in behaviours) behaviour.enabled = true;
+
+        deaths = 0;
+        onGameStart.Invoke();
     }
 
     void EndParty()
