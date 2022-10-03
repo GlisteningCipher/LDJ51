@@ -52,7 +52,7 @@ public class Party : MonoBehaviour
         foreach(var behaviour in behaviours) behaviour.enabled = true;
 
         deaths = 0;
-        onGameStart.Invoke();
+        onGameStart?.Invoke();
     }
 
     void EndParty()
