@@ -69,6 +69,7 @@ public class Results : MonoBehaviour
     void OnDisable()
     {
         ((RectTransform)transform).DOAnchorPosY(-500, 0.5f);
+        Party.deaths = 0;
     }
 
     void HandleGameOver()

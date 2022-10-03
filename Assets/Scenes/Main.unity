@@ -1393,7 +1393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1404,6 +1404,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1790054815}
@@ -1412,11 +1416,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 405454668}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1633028603}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
@@ -1428,6 +1440,10 @@ PrefabInstance:
       value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Party, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -1436,11 +1452,19 @@ PrefabInstance:
       value: UnityEngine.Behaviour, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: MissTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916195565110451569, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7916195566208003270, guid: 7424e47859665404db1180cb58bd204d, type: 3}
