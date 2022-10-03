@@ -22,13 +22,13 @@ public class Party : MonoBehaviour
     void OnEnable()
     {
         StartParty();
-        onResumeParty += CheckGameState;
+        onResumeParty += CheckForMurderers;
     }
 
     void OnDisable()
     {
         EndParty();
-        onResumeParty -= CheckGameState;
+        onResumeParty -= CheckForMurderers;
     }
 
     void StartParty()
@@ -44,6 +44,9 @@ public class Party : MonoBehaviour
             var spawnPos = GetRandomPoint();
             Instantiate(murdererPrefab, spawnPos, Quaternion.identity, transform);
         }
+
+        var behaviours = GetComponentsInChildren<Behaviour>();
+        foreach(var behaviour in behaviours) behaviour.enabled = true;
     }
 
     void EndParty()
@@ -61,12 +64,12 @@ public class Party : MonoBehaviour
             Random.Range(-Party.ROOM_HALFHEIGHT, Party.ROOM_HALFHEIGHT));
     }
     
-    public void CheckGameState()
+    public void CheckForMurderers()
     {
         var murderer = GameObject.FindGameObjectWithTag("Murderer");
         if (!murderer) onGameOver.Invoke();
     }
-    
+
     public void Reset()
     {
         EndParty(); StartParty();

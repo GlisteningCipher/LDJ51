@@ -1,7 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class ArrestUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {

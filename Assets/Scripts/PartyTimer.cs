@@ -29,6 +29,14 @@ public class PartyTimer : MonoBehaviour
         musicPlayer.PlayScheduled(startTime);
         chatterPlayer.PlayScheduled(startTime);
         chatterVolume = chatterPlayer.volume;
+        Party.onGameOver += OnGameOver;
+    }
+
+    void OnDisable()
+    {
+        musicPlayer.Stop();
+        chatterPlayer.Stop();
+        Party.onGameOver -= OnGameOver;
     }
 
     void Update()
@@ -55,8 +63,13 @@ public class PartyTimer : MonoBehaviour
 
         if (dspTime >= endTime )
         {
-            Debug.Log("The End!");
+            Party.onGameOver.Invoke();
             enabled = false;
         }
+    }
+
+    void OnGameOver()
+    {
+        enabled = false;
     }
 }

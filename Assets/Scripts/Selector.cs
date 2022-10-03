@@ -6,8 +6,9 @@ public class Selector : MonoBehaviour
 {
     [SerializeField] LayerMask uiLayer;
     [SerializeField] ArrestUI arrestUI;
+    [SerializeField] MissTracker missesUI;
 
-    public Selectable selection;
+    Selectable selection;
 
     void Update()
     {
@@ -35,7 +36,12 @@ public class Selector : MonoBehaviour
     {
         arrestUI.Close();
         if (!selection) return;
-        Destroy(selection.transform.parent.gameObject); //remove guest from party
+
+        var guest = selection.transform.parent.gameObject;
+        if (!guest.CompareTag("Murderer")) Party.onLightsOff += HandleBadGuess;
+        Destroy(guest); //remove guest from party
+
+        //reactivate selector when lights return
         enabled = false;
         Party.onLightsOn += OnLightsOn;
     }
@@ -44,5 +50,11 @@ public class Selector : MonoBehaviour
     {
         enabled = true;
         Party.onLightsOn -= OnLightsOn;
+    }
+
+    void HandleBadGuess()
+    {
+        missesUI.AddMark();
+        Party.onLightsOff -= HandleBadGuess;
     }
 }

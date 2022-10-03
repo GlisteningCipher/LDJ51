@@ -736,8 +736,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6638744586924887720}
   m_Bounds:
-    m_Center: {x: -0.8522978, y: -1.5621277, z: 0}
-    m_Extent: {x: 0.77792716, y: 0.79420364, z: 0}
+    m_Center: {x: 0.0037543178, y: 0.20238495, z: 0}
+    m_Extent: {x: 0.7732853, y: 0.7695314, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
