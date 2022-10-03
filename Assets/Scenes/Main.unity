@@ -481,6 +481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 356142606}
     m_Modifications:
+    - target: {fileID: 4796016836660650155, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eb20f34e55c7284db95900214b8e526, type: 3}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -518,6 +522,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -535,23 +551,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 249.99994
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 4796016837061319860, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -569,6 +585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_Arrest
       objectReference: {fileID: 0}
+    - target: {fileID: 4796016837061319865, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 93d0bd84da18a784780f8f01eb3dac7b, type: 3}
     - target: {fileID: 4796016837608178026, guid: 276e3acc3245a4a448f6c3aa32d83acc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -839,7 +859,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 779211eca248f094aa41d5fb4d43d690, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.488
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1258,7 +1278,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 84c80db44b7ba2b46af0daa7fba6cc22, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.157
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2102,6 +2122,10 @@ PrefabInstance:
       propertyPath: cheering
       value: 
       objectReference: {fileID: 1493754187}
+    - target: {fileID: 7916195566208003265, guid: 7424e47859665404db1180cb58bd204d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 93d0bd84da18a784780f8f01eb3dac7b, type: 3}
     - target: {fileID: 7916195566208003270, guid: 7424e47859665404db1180cb58bd204d, type: 3}
       propertyPath: m_Name
       value: Panel_Results
