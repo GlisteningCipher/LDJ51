@@ -52,7 +52,7 @@ public class Results : MonoBehaviour
                 stars = 1;
                 break;
             case 15:
-                message.text = "";
+                message.text = letters[6];
                 stars = 0;
                 break;
         }

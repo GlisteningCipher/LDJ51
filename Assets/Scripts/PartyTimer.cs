@@ -22,7 +22,7 @@ public class PartyTimer : MonoBehaviour
 
     void OnEnable()
     {
-        startTime = AudioSettings.dspTime + 1;
+        startTime = AudioSettings.dspTime;
         lightsOffEvent = startTime + 10;
         lightsOnEvent = startTime + 11;
         resumePartyEvent = startTime;

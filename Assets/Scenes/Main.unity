@@ -946,7 +946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   victimPrefab: {fileID: 6173838502951085013, guid: e8210722141eb3d4dab9023cd4a8c653, type: 3}
   murdererPrefab: {fileID: 2901394743229668230, guid: 08f8a127372be9c4c840fb387a8cb36b, type: 3}
-  startingVictims: 24
+  startingVictims: 49
   startingMurderers: 1
 --- !u!4 &1790054816
 Transform:
