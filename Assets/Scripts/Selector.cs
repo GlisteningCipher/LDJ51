@@ -5,6 +5,7 @@ using UnityEngine;
 public class Selector : MonoBehaviour
 {
     [SerializeField] LayerMask uiLayer;
+    [SerializeField] ArrestUI arrestUI;
 
     public Selectable selection;
 
@@ -25,6 +26,23 @@ public class Selector : MonoBehaviour
                 selection = hit.collider.GetComponent<Selectable>();
                 selection.Select();
             }
+
+            if (selection) arrestUI.Open(); else arrestUI.Close();
         }
+    }
+
+    public void ArrestSelection()
+    {
+        arrestUI.Close();
+        if (!selection) return;
+        Destroy(selection.transform.parent.gameObject); //remove guest from party
+        enabled = false;
+        Party.onLightsOn += OnLightsOn;
+    }
+
+    void OnLightsOn()
+    {
+        enabled = true;
+        Party.onLightsOn -= OnLightsOn;
     }
 }

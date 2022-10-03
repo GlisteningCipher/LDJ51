@@ -14,17 +14,21 @@ public class Party : MonoBehaviour
     public static Action onLightsOn;
     public static Action onResumeParty;
 
+    public static Action onGameOver;
+
     static float ROOM_HALFWIDTH = 12.8f;
     static float ROOM_HALFHEIGHT = 8f;
 
     void OnEnable()
     {
         StartParty();
+        onResumeParty += CheckGameState;
     }
 
     void OnDisable()
     {
         EndParty();
+        onResumeParty -= CheckGameState;
     }
 
     void StartParty()
@@ -55,5 +59,16 @@ public class Party : MonoBehaviour
         return new Vector2(
             Random.Range(-Party.ROOM_HALFWIDTH, Party.ROOM_HALFWIDTH),
             Random.Range(-Party.ROOM_HALFHEIGHT, Party.ROOM_HALFHEIGHT));
+    }
+    
+    public void CheckGameState()
+    {
+        var murderer = GameObject.FindGameObjectWithTag("Murderer");
+        if (!murderer) onGameOver.Invoke();
+    }
+    
+    public void Reset()
+    {
+        EndParty(); StartParty();
     }
 }

@@ -14,7 +14,6 @@ public class Victim : MonoBehaviour
     {
         gunShot.Play();
         Die();
-
     }
 
     void Die()

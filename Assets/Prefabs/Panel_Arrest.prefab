@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 4796016837061319866}
   - component: {fileID: 4796016837061319865}
   - component: {fileID: 4796016837061319864}
+  - component: {fileID: 3367979200805862816}
   m_Layer: 5
   m_Name: Panel_Arrest
   m_TagString: Untagged
@@ -301,6 +302,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900e218dfeac1554e849ab2a7e506b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 0.5
+  group: {fileID: 3367979200805862816}
+--- !u!225 &3367979200805862816
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796016837061319861}
+  m_Enabled: 1
+  m_Alpha: 0.33
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4796016837270197306
 GameObject:
   m_ObjectHideFlags: 0

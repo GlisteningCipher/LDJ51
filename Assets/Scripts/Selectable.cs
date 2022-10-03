@@ -19,4 +19,9 @@ public class Selectable : MonoBehaviour
     {
         foreach (var renderer in renderers) renderer.material = standardMaterial;
     }
+
+    void OnDestroy()
+    {
+        Deselect();
+    }
 }
