@@ -10,7 +10,8 @@ public class Results : MonoBehaviour
     [SerializeField] TextMeshProUGUI message;
     [SerializeField] TextMeshProUGUI casualties;
     [SerializeField] Transform starContainer;
-
+    [SerializeField] AudioSource cheering;
+    [SerializeField] AudioSource youLose;
     int stars;
 
     void Awake()
@@ -56,7 +57,8 @@ public class Results : MonoBehaviour
                 stars = 0;
                 break;
         }
-
+        if (Party.deaths != 15) cheering.Play();
+        else youLose.Play();
         casualties.text = Party.deaths <15 ? $"Loss of Life: {Party.deaths}" : "Loss of Life: Everyone";
 
         foreach (Transform star in starContainer)

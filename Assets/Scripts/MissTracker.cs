@@ -4,7 +4,7 @@ public class MissTracker : MonoBehaviour
 {
     int misses = 0;
     int maxMisses = 3;
-
+    [SerializeField] AudioSource wrongPerson;
     void Awake()
     {
         Party.onGameStart += HandleGameStart;
@@ -26,13 +26,20 @@ public class MissTracker : MonoBehaviour
         misses += 1;
 
         if (misses == maxMisses) { Party.onLightsOn += HandleGameOver; }
+        else Party.onLightsOn += HandleWrongGuess;
     }
 
+    void HandleWrongGuess()
+    {
+        wrongPerson.Play();
+        Party.onLightsOn -= HandleWrongGuess;
+    }
     void HandleGameOver()
     {
         Party.deaths = 15;
         Party.onGameOver.Invoke();
         Party.onLightsOn -= HandleGameOver;
+
     }
 
     void HandleGameStart()

@@ -5,10 +5,12 @@ public class Victim : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] AudioSource gunShot;
+    [SerializeField] AudioSource knife;
     [SerializeField] GameObject clickArea;
 
     public void GetStabbed()
     {
+        knife.Play();
         Die();
     }
 

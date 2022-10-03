@@ -7,7 +7,8 @@ public class Selector : MonoBehaviour
     [SerializeField] LayerMask uiLayer;
     [SerializeField] ArrestUI arrestUI;
     [SerializeField] MissTracker missesUI;
-
+    [SerializeField] AudioSource open;
+    [SerializeField] AudioSource close;
     Selectable selection;
 
     void Update()
@@ -28,7 +29,7 @@ public class Selector : MonoBehaviour
                 selection.Select();
             }
 
-            if (selection) arrestUI.Open(); else arrestUI.Close();
+            if (selection) { arrestUI.Open(); open.Play(); } else { arrestUI.Close(); close.Play(); }
         }
     }
 
