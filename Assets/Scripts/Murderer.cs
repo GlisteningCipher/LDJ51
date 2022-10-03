@@ -2,25 +2,17 @@ using UnityEngine;
 
 public class Murderer : MonoBehaviour
 {
-    [SerializeField] Clickable myClickable;
     [SerializeField] Collider2D knifeRange;
     [SerializeField] ContactFilter2D filter;
 
     void Awake()
     {
-        myClickable.onClick += ClickResponse;
         Party.onLightsOff += Kill;
     }
 
     void OnDestroy()
     {
-        myClickable.onClick -= ClickResponse;
         Party.onLightsOff -= Kill;
-    }
-
-    void ClickResponse()
-    {
-        Debug.Log("Drat! You found me!");
     }
 
     [ContextMenu("Kill")]

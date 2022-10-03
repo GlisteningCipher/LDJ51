@@ -3,23 +3,6 @@ using UnityEngine;
 
 public class Victim : MonoBehaviour
 {
-    [SerializeField] Clickable myClickable;
-
-    void Awake()
-    {
-        myClickable.onClick += ClickResponse;
-    }
-
-    void OnDestroy()
-    {
-        myClickable.onClick -= ClickResponse;
-    }
-
-    void ClickResponse()
-    {
-        Debug.Log("You have the wrong person!");
-    }
-
     public void GetStabbed()
     {
         Die();
